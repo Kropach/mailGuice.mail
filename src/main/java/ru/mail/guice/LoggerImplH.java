@@ -5,19 +5,18 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.logging.Logger;
 
-public class LoggerImpl1 implements LoggerInterface {
+public class LoggerImplH implements LoggerInterface {
     @Inject
-    private @NotNull Logger logger;
-
-
+    private @NotNull
+    Logger logger;
 
     @Override
     public void loggStart() {
-        logger.info("<a>");
+        logger.info("<h>");
     }
 
     @Override
     public void loggFinish() {
-        logger.info("</a>");
+        logger.info("</h>");
     }
 }
